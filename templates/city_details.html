@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ city.city.name }}</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #105c9e;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding-top: 20px;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 25px;
+            border-radius: 16px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            border: 3px solid;
+            border-image: linear-gradient(to right, #48cae4, #023e8a) 1;
+        }
+
+        h1 {
+            text-align: center;
+            color: #023e8a;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            transition: color 0.3s ease;
+        }
+
+        h1:hover {
+            color: #0077b6;
+        }
+
+        .back-button {
+            padding: 10px 15px;
+            background-color: #0077b6;
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            display: inline-block;
+            margin-bottom: 15px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .back-button:hover {
+            background-color: #023e8a;
+            transform: scale(1.05);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #ade8f4;
+            color: #023e8a;
+            font-size: 1.1em;
+            position: sticky;
+            top: 0;
+            z-index: 2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f1f1f1;
+        }
+
+        tr:hover {
+            background-color: #caf0f8;
+        }
+
+        .weather-description {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .weather-description img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 5px;
+            transition: transform 0.2s ease;
+        }
+
+        .weather-description img:hover {
+            transform: scale(1.2);
+        }
+
+        .weather-description span {
+            font-size: 0.9em;
+            color: #333;
+        }
+
+        .temperature {
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        .temperature.heat {
+            color: #d00000;
+        }
+
+        .temperature.cold {
+            color: #1e90ff;
+        }
+
+        .temperature.mild {
+            color: #f48c06;
+        }
+
+        .additional-info {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .info-item {
+            background-color: #e3f2fd;
+            padding: 8px 12px;
+            border-radius: 8px;
+            font-size: 0.9em;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .info-item img {
+            width: 24px;
+            height: 24px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <a href="{{ url_for('index') }}" class="back-button">← Atpakaļ</a>
+    <h1>{{ city.city.name }}</h1>
+
+    <h2>🌦️ Prognoze nākamajām 5 dienām</h2>
+    <table>
+        <thead>
+        <tr>
+            <th>Datums</th>
+            <th>Temperatūra (°C)</th>
+            <th>Apraksts</th>
+            <th>Papildu informācija</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for forecast in city.list %}
+        {% set temp_class = 'mild' %}
+        {% if forecast.main.temp >= 25 %}
+            {% set temp_class = 'heat' %}
+        {% elif forecast.main.temp <= 0 %}
+            {% set temp_class = 'cold' %}
+        {% endif %}
+
+        <tr>
+            <td>{{ forecast.dt_txt }}</td>
+            <td class="temperature {{ temp_class }}">{{ forecast.main.temp }}°C</td>
+            <td class="weather-description">
+                <img src="http://openweathermap.org/img/wn/{{ forecast.weather[0].icon }}@2x.png" alt="Ikona">
+                <span>{{ forecast.weather[0].description }}</span>
+            </td>
+            <td>
+                <div class="additional-info">
+                    <div class="info-item">
+                        <img src="https://img.icons8.com/fluency/48/000000/humidity.png" alt="Mitrums">
+                        {{ forecast.main.humidity }}%
+                    </div>
+                    <div class="info-item">
+                        <img src="https://img.icons8.com/fluency/48/000000/wind.png" alt="Vējš">
+                        {{ forecast.wind.speed }} m/s
+                    </div>
+                    <div class="info-item">
+                        <img src="{{ url_for('static', filename='images/Barometr.png') }}" alt="Spiediens">
+                        {{ forecast.main.pressure }} hPa
+                    </div>
+                </div>
+            </td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

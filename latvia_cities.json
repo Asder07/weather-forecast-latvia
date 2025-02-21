@@ -1,0 +1,662 @@
+[
+    {
+        "id": 453754,
+        "coord": {
+            "lon": 25.427509,
+            "lat": 57.54108
+        },
+        "country": "LV",
+        "geoname": {
+            "cl": "P",
+            "code": "PPL",
+            "parent": 454564
+        },
+        "name": "Valmiera",
+        "stat": {
+            "level": 1.0,
+            "population": 26963
+        },
+        "zoom": 7
+    },
+    {
+        "id": 454310,
+        "coord": {
+            "lon": 21.56056,
+            "lat": 57.389439
+        },
+        "country": "LV",
+        "geoname": {
+            "cl": "P",
+            "code": "PPLA",
+            "parent": 454307
+        },
+        "name": "Ventspils",
+        "stat": {
+            "level": 1.0,
+            "population": 42644
+        },
+        "stations": [
+            {
+                "id": 7369,
+                "dist": 24,
+                "kf": 1
+            }
+        ],
+        "zoom": 7
+    },
+    {
+        "id": 454432,
+        "coord": {
+            "lon": 21.01667,
+            "lat": 56.533329
+        },
+        "country": "LV",
+        "geoname": {
+            "cl": "P",
+            "code": "PPLX",
+            "parent": 457954
+        },
+        "name": "Vec-Liepaja",
+        "stat": {
+            "level": 1.0,
+            "population": 85260
+        },
+        "stations": [
+            {
+                "id": 7367,
+                "dist": 5,
+                "kf": 1
+            }
+        ],
+        "zoom": 7
+    },
+    {
+        "id": 454768,
+        "coord": {
+            "lon": 23.155279,
+            "lat": 56.966942
+        },
+        "country": "LV",
+        "geoname": {
+            "cl": "P",
+            "code": "PPLA",
+            "parent": 454771
+        },
+        "name": "Tukums",
+        "stat": {
+            "level": 1.0,
+            "population": 18348
+        },
+        "stations": [
+            {
+                "id": 7368,
+                "dist": 49,
+                "kf": 1
+            }
+        ],
+        "zoom": 8
+    },
+    {
+        "id": 455898,
+        "coord": {
+            "lon": 24.36544,
+            "lat": 56.860142
+        },
+        "country": "LV",
+        "geoname": {
+            "cl": "P",
+            "code": "PPL",
+            "parent": 456169
+        },
+        "name": "Salaspils",
+        "stat": {
+            "level": 1.0,
+            "population": 17606
+        },
+        "stations": [
+            {
+                "id": 7368,
+                "dist": 24,
+                "kf": 1
+            }
+        ],
+        "zoom": 10
+    },
+    {
+        "id": 456172,
+        "coord": {
+            "lon": 24.1,
+            "lat": 56.950001
+        },
+        "country": "LV",
+        "geoname": {
+            "cl": "P",
+            "code": "PPLC",
+            "parent": 456173
+        },
+        "langs": [
+            {
+                "am": "ሪጋ"
+            },
+            {
+                "ar": "ريغا"
+            },
+            {
+                "be": "Рыґа"
+            },
+            {
+                "bg": "Рига"
+            },
+            {
+                "br": "Riga"
+            },
+            {
+                "bs": "Riga"
+            },
+            {
+                "ca": "Riga"
+            },
+            {
+                "cs": "Riga"
+            },
+            {
+                "da": "Riga"
+            },
+            {
+                "de": "Riga"
+            },
+            {
+                "el": "Ρίγα"
+            },
+            {
+                "en": "Riga"
+            },
+            {
+                "eo": "Rigo"
+            },
+            {
+                "es": "Riga"
+            },
+            {
+                "et": "Riia"
+            },
+            {
+                "eu": "Riga"
+            },
+            {
+                "fi": "Riika"
+            },
+            {
+                "fr": "Riga"
+            },
+            {
+                "frp": "Riga"
+            },
+            {
+                "gl": "Riga"
+            },
+            {
+                "he": "ריגה"
+            },
+            {
+                "hr": "Riga"
+            },
+            {
+                "hu": "Riga"
+            },
+            {
+                "iata": "RIX"
+            },
+            {
+                "id": "Riga"
+            },
+            {
+                "io": "Riga"
+            },
+            {
+                "is": "Ríga"
+            },
+            {
+                "it": "Riga"
+            },
+            {
+                "ja": "リガ"
+            },
+            {
+                "ka": "რიგა"
+            },
+            {
+                "ko": "리가"
+            },
+            {
+                "link": "http://en.wikipedia.org/wiki/Riga"
+            },
+            {
+                "lt": "Ryga"
+            },
+            {
+                "lv": "Rīga"
+            },
+            {
+                "mk": "Рига"
+            },
+            {
+                "mo": "Рига"
+            },
+            {
+                "mr": "रिगा"
+            },
+            {
+                "nds": "Riga"
+            },
+            {
+                "nl": "Riga"
+            },
+            {
+                "nn": "Riga"
+            },
+            {
+                "no": "Riga"
+            },
+            {
+                "oc": "Riga"
+            },
+            {
+                "os": "Ригæ"
+            },
+            {
+                "pl": "Ryga"
+            },
+            {
+                "pms": "Riga"
+            },
+            {
+                "pt": "Riga"
+            },
+            {
+                "qu": "Riga"
+            },
+            {
+                "ro": "Riga"
+            },
+            {
+                "ru": "РИГА"
+            },
+            {
+                "sh": "Riga"
+            },
+            {
+                "sk": "Riga"
+            },
+            {
+                "sq": "Riga"
+            },
+            {
+                "sr": "Рига"
+            },
+            {
+                "sv": "Riga"
+            },
+            {
+                "tg": "Рига"
+            },
+            {
+                "th": "ริกา"
+            },
+            {
+                "tr": "Riga"
+            },
+            {
+                "uk": "Рига"
+            },
+            {
+                "zh": "里加"
+            }
+        ],
+        "name": "Riga",
+        "stat": {
+            "level": 1.0,
+            "population": 742572
+        },
+        "stations": [
+            {
+                "id": 7368,
+                "dist": 8,
+                "kf": 1
+            }
+        ],
+        "zoom": 5
+    },
+    {
+        "id": 456202,
+        "coord": {
+            "lon": 27.316669,
+            "lat": 56.5
+        },
+        "country": "LV",
+        "geoname": {
+            "cl": "P",
+            "code": "PPLA",
+            "parent": 456197
+        },
+        "langs": [
+            {
+                "ca": "Rēzekne"
+            },
+            {
+                "de": "Rēzekne"
+            },
+            {
+                "el": "Ρέζεκνε"
+            },
+            {
+                "en": "Rēzekne"
+            },
+            {
+                "eo": "Rezekne"
+            },
+            {
+                "es": "Rēzekne"
+            },
+            {
+                "et": "Rēzekne"
+            },
+            {
+                "fi": "Rēzekne"
+            },
+            {
+                "fr": "Rezekne"
+            },
+            {
+                "he": "רזקנה"
+            },
+            {
+                "hu": "Rēzekne"
+            },
+            {
+                "it": "Rēzekne"
+            },
+            {
+                "link": "http://ru.wikipedia.org/wiki/%D0%A0%D0%B5%D0%B7%D0%B5%D0%BA%D0%BD%D0%B5"
+            },
+            {
+                "lt": "Rezeknė"
+            },
+            {
+                "lv": "Rēzekne"
+            },
+            {
+                "nl": "Rēzekne"
+            },
+            {
+                "no": "Rēzekne"
+            },
+            {
+                "pl": "Rzeżyca"
+            },
+            {
+                "pt": "Rezekne"
+            },
+            {
+                "ro": "Rēzekne"
+            },
+            {
+                "ru": "Резекне"
+            },
+            {
+                "sv": "Rēzekne"
+            }
+        ],
+        "name": "Rezekne",
+        "stat": {
+            "level": 1.0,
+            "population": 38340
+        },
+        "zoom": 7
+    },
+    {
+        "id": 457065,
+        "coord": {
+            "lon": 24.61401,
+            "lat": 56.8162
+        },
+        "country": "LV",
+        "geoname": {
+            "cl": "P",
+            "code": "PPL",
+            "parent": 457061
+        },
+        "name": "Ogre",
+        "stat": {
+            "level": 1.0,
+            "population": 25818
+        },
+        "stations": [
+            {
+                "id": 7368,
+                "dist": 40,
+                "kf": 1
+            }
+        ],
+        "zoom": 9
+    },
+    {
+        "id": 457954,
+        "coord": {
+            "lon": 21.01667,
+            "lat": 56.51667
+        },
+        "country": "LV",
+        "geoname": {
+            "cl": "P",
+            "code": "PPLA",
+            "parent": 457955
+        },
+        "langs": [
+            {
+                "be": "Ліепая"
+            },
+            {
+                "ca": "Liepāja"
+            },
+            {
+                "da": "Liepaja"
+            },
+            {
+                "de": "Liepāja"
+            },
+            {
+                "el": "Λιεπάγια"
+            },
+            {
+                "en": "Liepāja"
+            },
+            {
+                "es": "Liepāja"
+            },
+            {
+                "et": "Liepāja"
+            },
+            {
+                "fi": "Liepāja"
+            },
+            {
+                "fr": "Liepaja"
+            },
+            {
+                "he": "ליפאיה"
+            },
+            {
+                "hu": "Liepāja"
+            },
+            {
+                "it": "Liepāja"
+            },
+            {
+                "ja": "リエパーヤ"
+            },
+            {
+                "ko": "리에파야"
+            },
+            {
+                "link": "http://en.wikipedia.org/wiki/Liep%C4%81ja"
+            },
+            {
+                "lt": "Liepoja"
+            },
+            {
+                "lv": "Liepāja"
+            },
+            {
+                "nl": "Liepāja"
+            },
+            {
+                "no": "Liepāja"
+            },
+            {
+                "pl": "Lipawa"
+            },
+            {
+                "pt": "Liepāja"
+            },
+            {
+                "ro": "Liepāja"
+            },
+            {
+                "ru": "Лиепая"
+            },
+            {
+                "sv": "Liepāja"
+            }
+        ],
+        "name": "Liepaja",
+        "stat": {
+            "level": 1.0,
+            "population": 85132
+        },
+        "stations": [
+            {
+                "id": 7367,
+                "dist": 5,
+                "kf": 1
+            }
+        ],
+        "zoom": 14
+    },
+    {
+        "id": 459201,
+        "coord": {
+            "lon": 23.77038,
+            "lat": 56.967999
+        },
+        "country": "LV",
+        "geoname": {
+            "cl": "P",
+            "code": "PPL",
+            "parent": 459202
+        },
+        "name": "Jurmala",
+        "stat": {
+            "level": 1.0,
+            "population": 54088
+        },
+        "stations": [
+            {
+                "id": 7368,
+                "dist": 13,
+                "kf": 1
+            }
+        ],
+        "zoom": 9
+    },
+    {
+        "id": 459279,
+        "coord": {
+            "lon": 23.71278,
+            "lat": 56.650002
+        },
+        "country": "LV",
+        "geoname": {
+            "cl": "P",
+            "code": "PPLA",
+            "parent": 459278
+        },
+        "name": "Jelgava",
+        "stat": {
+            "level": 1.0,
+            "population": 61791
+        },
+        "stations": [
+            {
+                "id": 7368,
+                "dist": 33,
+                "kf": 1
+            }
+        ],
+        "zoom": 8
+    },
+    {
+        "id": 459283,
+        "coord": {
+            "lon": 25.857349,
+            "lat": 56.499031
+        },
+        "country": "LV",
+        "geoname": {
+            "cl": "P",
+            "code": "PPL",
+            "parent": 459282
+        },
+        "name": "Jekabpils",
+        "stat": {
+            "level": 1.0,
+            "population": 27078
+        },
+        "zoom": 8
+    },
+    {
+        "id": 460413,
+        "coord": {
+            "lon": 26.533331,
+            "lat": 55.883331
+        },
+        "country": "LV",
+        "geoname": {
+            "cl": "P",
+            "code": "PPLA",
+            "parent": 460410
+        },
+        "name": "Daugavpils",
+        "stat": {
+            "level": 1.0,
+            "population": 111564
+        },
+        "zoom": 7
+    },
+    {
+        "id": 460570,
+        "coord": {
+            "lon": 25.274561,
+            "lat": 57.311878
+        },
+        "country": "LV",
+        "geoname": {
+            "cl": "P",
+            "code": "PPL",
+            "parent": 460569
+        },
+        "name": "Cesis",
+        "stat": {
+            "level": 1.0,
+            "population": 18198
+        },
+        "stations": [
+            {
+                "id": 7368,
+                "dist": 90,
+                "kf": 1
+            }
+        ],
+        "zoom": 9
+    }
+]

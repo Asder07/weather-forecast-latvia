@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <title>Laikapstākļi Latvijas pilsētās</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background: url("{{ url_for('static', filename='images/' + background) }}") no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding-top: 20px;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 950px;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 14px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        h1 {
+            text-align: center;
+            color: #0077b6;
+            margin-bottom: 20px;
+        }
+
+        .search-bar {
+            width: 100%;
+            padding: 10px 5px;  
+            margin-bottom: 20px;
+            border: 2px solid #0077b6;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        .city-card {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            margin-bottom: 12px;
+            background: #f1f1f1;
+            border-radius: 10px;
+            transition: background 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .city-card:hover {
+            background: #e0f7fa;
+            transform: translateY(-3px);
+        }
+
+        .city-info {
+            display: flex;
+            align-items: center;
+        }
+
+        .weather-icon {
+            width: 60px;
+            height: 60px;
+            margin-right: 15px;
+        }
+
+        .city-details {
+            font-size: 14px;
+            color: #333;
+        }
+
+        .details-button {
+            padding: 10px 14px;
+            background-color: #0077b6;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .details-button:hover {
+            background-color: #005f8a;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>🌦️ Laikapstākļi Latvijas pilsētās</h1>
+
+    <input type="text" id="searchInput" class="search-bar" placeholder="🔎 Meklēt pilsētu..." onkeyup="filterCities()">
+
+    {% for city in cities %}
+    <div class="city-card">
+        <div class="city-info">
+            <img class="weather-icon" src="http://openweathermap.org/img/wn/{{ city.icon }}@2x.png" alt="Ikona">
+            <div>
+                <h3>{{ city.name }}</h3>
+                <p class="city-details">🌡️ {{ city.temp }}°C | {{ city.description }}</p>
+            </div>
+        </div>
+        <a class="details-button" href="{{ url_for('city_details', city_id=city.city_id) }}">Plašāka informācija</a>
+    </div>
+    {% endfor %}
+</div>
+
+<script>
+    function filterCities() {
+        const input = document.getElementById('searchInput').value.toLowerCase();
+        const cityCards = document.querySelectorAll('.city-card');
+
+        cityCards.forEach(card => {
+            const cityName = card.querySelector('h3').innerText.toLowerCase();
+            card.style.display = cityName.includes(input) ? 'flex' : 'none';
+        });
+    }
+</script>
+</body>
+</html>
